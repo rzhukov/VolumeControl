@@ -13,7 +13,6 @@ namespace VolumeHotKey
             // Add the default menu options.
             ContextMenuStrip menu = new ContextMenuStrip();
             ToolStripMenuItem item;
-            ToolStripSeparator sep;
 
             // About
             item = new ToolStripMenuItem();
@@ -39,7 +38,10 @@ namespace VolumeHotKey
 
         static void aboutItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            About aboutForm = new About();
+            aboutForm.StartPosition = FormStartPosition.CenterScreen;
+            aboutForm.ShowInTaskbar = false;
+            aboutForm.ShowDialog();
         }
     }
 }
