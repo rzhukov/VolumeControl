@@ -57,6 +57,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContextMenus.cs" />
     <Compile Include="KeyboardHook\EnumParser.cs" />
     <Compile Include="KeyboardHook\Extensions.cs" />
     <Compile Include="SoundControl\PCWin32.cs" />

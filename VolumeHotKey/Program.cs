@@ -31,6 +31,7 @@ namespace VolumeHotKey
                 ni.Icon = VolumeHotKey.Properties.Resources.volumenormal_3729;
                 ni.Visible = true;
                 ni.Text = "Volume control by hotkeys";//\r\nF12 - Volume Up\r\nF11 - Volume Down\r\nF10 - Mute";
+                ni.ContextMenuStrip = ContextMenus.Create();
 
                 SetupHotkeys();
                 Application.Run();
