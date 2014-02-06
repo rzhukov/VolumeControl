@@ -57,15 +57,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContextMenus.cs" />
     <Compile Include="KeyboardHook\EnumParser.cs" />
     <Compile Include="KeyboardHook\Extensions.cs" />
     <Compile Include="SoundControl\PCWin32.cs" />
-    <Compile Include="SettingsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingsForm.Designer.cs">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="KeyboardHook\KeyboardHook.cs" />
     <Compile Include="KeyboardHook\KeyboardLockDownKeyPressedEventArgs.cs" />
     <Compile Include="KeyboardHook\KeyCombination.cs" />
@@ -79,8 +80,8 @@
     <Compile Include="SoundControl\VolumeControl.cs" />
     <Compile Include="SoundControl\VolumeController.cs" />
     <Compile Include="SoundControl\VolumeStructs.cs" />
-    <EmbeddedResource Include="SettingsForm.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
