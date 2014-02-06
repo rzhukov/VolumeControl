@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
+using KeyboardHookReduxSample;
 
 namespace VolumeHotKey
 {
@@ -25,9 +26,62 @@ namespace VolumeHotKey
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SettingsForm());
+            using (NotifyIcon ni = new NotifyIcon())
+            {
+                ni.Icon = VolumeHotKey.Properties.Resources.volumenormal_3729;
+                ni.Visible = true;
+                ni.Text = "Volume control by hotkeys";//\r\nF12 - Volume Up\r\nF11 - Volume Down\r\nF10 - Mute";
 
+                SetupHotkeys();
+                Application.Run();
+            }
             mutex.ReleaseMutex();
+        }
+
+        private static KeyboardHook _VolUpHook;
+        private static KeyboardHook _VolDownHook;
+        private static KeyboardHook _VolMuteHook;
+
+        static void SetupHotkeys()
+        {
+            _VolUpHook = new KeyboardHook();
+            _VolUpHook.SetKeys(new KeyCombination(KeysEx.F12 | KeysEx.WinLogo));
+            _VolUpHook.AutoRepeat = true;
+
+            _VolUpHook.Pressed += new EventHandler(_VolUpHook_Hooked);
+
+            _VolUpHook.Engage();
+
+            _VolDownHook = new KeyboardHook();
+            _VolDownHook.SetKeys(new KeyCombination(KeysEx.F11 | KeysEx.WinLogo));
+            _VolDownHook.AutoRepeat = true;
+
+            _VolDownHook.Pressed += new EventHandler(_VolDownHook_Pressed);
+
+            _VolDownHook.Engage();
+
+            _VolMuteHook = new KeyboardHook();
+            _VolMuteHook.SetKeys(new KeyCombination(KeysEx.F10 | KeysEx.WinLogo));
+            _VolMuteHook.AutoRepeat = true;
+
+            _VolMuteHook.Pressed += new EventHandler(_VolMuteHook_Pressed);
+
+            _VolMuteHook.Engage();
+        }
+
+        static void _VolMuteHook_Pressed(object sender, EventArgs e)
+        {
+            VolumeController.SwitchMute();
+        }
+
+        static void _VolDownHook_Pressed(object sender, EventArgs e)
+        {
+            VolumeController.VolumeDown(5);
+        }
+
+        static void _VolUpHook_Hooked(object sender, EventArgs e)
+        {
+            VolumeController.VolumeUp(5);
         }
     }
 }
