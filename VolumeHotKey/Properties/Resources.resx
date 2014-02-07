@@ -132,4 +132,16 @@ Win + F10 - Mute all sounds</value>
   <data name="volumenormal_3729" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\volumenormal_3729.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AnotherCopyRunMessage" xml:space="preserve">
+    <value>Another copy of this program already running</value>
+  </data>
+  <data name="TrayIconHintText" xml:space="preserve">
+    <value>Volume control by hotkeys</value>
+  </data>
+  <data name="ContextMenuAboutItemText" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ContextMenuExitItemText" xml:space="preserve">
+    <value>Exit</value>
+  </data>
 </root>

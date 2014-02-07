@@ -20,7 +20,7 @@ namespace VolumeHotKey
             Mutex mutex = new Mutex(true, "VOLUME_CONTROL_HOTKEY_MUTEX", out isNew);
             if(!isNew)
             {
-                MessageBox.Show("В памяти компьютера уже загружен один экземпляр данного приложения", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(Properties.Resources.AnotherCopyRunMessage, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Process.GetCurrentProcess().Kill();
             }
 
@@ -30,7 +30,7 @@ namespace VolumeHotKey
             {
                 ni.Icon = VolumeHotKey.Properties.Resources.volumenormal_3729;
                 ni.Visible = true;
-                ni.Text = "Volume control by hotkeys";//\r\nF12 - Volume Up\r\nF11 - Volume Down\r\nF10 - Mute";
+                ni.Text = Properties.Resources.TrayIconHintText;
                 ni.ContextMenuStrip = ContextMenus.Create();
 
                 SetupHotkeys();

@@ -16,7 +16,7 @@ namespace VolumeHotKey
 
             // About
             item = new ToolStripMenuItem();
-            item.Text = "About";
+            item.Text = Properties.Resources.ContextMenuAboutItemText;
             item.Image = Properties.Resources.messagebox_info;
             item.Click += new EventHandler(aboutItem_Click);
             //item.Image = Resources.About;
@@ -24,7 +24,7 @@ namespace VolumeHotKey
 
             // Exit.
             item = new ToolStripMenuItem();
-            item.Text = "Exit";
+            item.Text = Properties.Resources.ContextMenuExitItemText;
             item.Image = Properties.Resources.exit;
             item.Click += new EventHandler(exit_Click);
             //item.Image = Resources.Exit;

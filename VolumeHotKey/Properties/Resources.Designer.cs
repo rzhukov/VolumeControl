@@ -60,6 +60,33 @@ namespace VolumeHotKey.Properties {
             }
         }
         
+        /// <summary>
+        ///   Looks up a localized string similar to Another copy of this program already running.
+        /// </summary>
+        internal static string AnotherCopyRunMessage {
+            get {
+                return ResourceManager.GetString("AnotherCopyRunMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string ContextMenuAboutItemText {
+            get {
+                return ResourceManager.GetString("ContextMenuAboutItemText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string ContextMenuExitItemText {
+            get {
+                return ResourceManager.GetString("ContextMenuExitItemText", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap exit {
             get {
                 object obj = ResourceManager.GetObject("exit", resourceCulture);
@@ -82,6 +109,15 @@ namespace VolumeHotKey.Properties {
             get {
                 object obj = ResourceManager.GetObject("messagebox_info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume control by hotkeys.
+        /// </summary>
+        internal static string TrayIconHintText {
+            get {
+                return ResourceManager.GetString("TrayIconHintText", resourceCulture);
             }
         }
         
