@@ -104,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\messagebox_info.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\exit_3422.png" />
     <Content Include="volumenormal_3729.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
