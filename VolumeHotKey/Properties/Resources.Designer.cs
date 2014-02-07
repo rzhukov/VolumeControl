@@ -68,9 +68,9 @@ namespace VolumeHotKey.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to F12 - Up sound level by 5 percent
-        ///F11 - Down sound level by 5 percent
-        ///F10 - Mute all sounds.
+        ///   Looks up a localized string similar to Win + F12 - Up sound level by 5 percent
+        ///Win + F11 - Down sound level by 5 percent
+        ///Win + F10 - Mute all sounds.
         /// </summary>
         internal static string HotkeysDescription {
             get {
