@@ -122,9 +122,9 @@
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HotkeysDescription" xml:space="preserve">
-    <value>Win + F12 - Up sound level by 5 percent
-Win + F11 - Down sound level by 5 percent
-Win + F10 - Mute all sounds</value>
+    <value>Win + F12 - Увеличить громкость на 5 процентов
+Win + F11 - Уменьшить громкость на 5 процентов
+Win + F10 - Отключить все звуки</value>
   </data>
   <data name="messagebox_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\messagebox_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,24 +133,24 @@ Win + F10 - Mute all sounds</value>
     <value>..\volumenormal_3729.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AnotherCopyRunMessage" xml:space="preserve">
-    <value>Another copy of this program already running</value>
+    <value>На этом компьютере уже запущена копия этой программы</value>
   </data>
   <data name="TrayIconHintText" xml:space="preserve">
-    <value>Volume control by hotkeys</value>
-  </data>
-  <data name="AboutFormAboutRow" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="AboutFormVersionRow" xml:space="preserve">
-    <value>Version</value>
-  </data>
-  <data name="AuthorName" xml:space="preserve">
-    <value>Roman Zhukov</value>
+    <value>Управление громкостью горячими клавишами</value>
   </data>
   <data name="ContextMenuAboutItemText" xml:space="preserve">
-    <value>About</value>
+    <value>О программе</value>
   </data>
   <data name="ContextMenuExitItemText" xml:space="preserve">
-    <value>Exit</value>
+    <value>Выход</value>
+  </data>
+  <data name="AboutFormAboutRow" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="AboutFormVersionRow" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="AuthorName" xml:space="preserve">
+    <value>Роман Жуков</value>
   </data>
 </root>

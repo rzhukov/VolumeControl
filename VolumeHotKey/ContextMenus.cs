@@ -10,7 +10,6 @@ namespace VolumeHotKey
     {
         public static ContextMenuStrip Create()
         {
-            // Add the default menu options.
             ContextMenuStrip menu = new ContextMenuStrip();
             ToolStripMenuItem item;
 
@@ -19,15 +18,13 @@ namespace VolumeHotKey
             item.Text = Properties.Resources.ContextMenuAboutItemText;
             item.Image = Properties.Resources.messagebox_info;
             item.Click += new EventHandler(aboutItem_Click);
-            //item.Image = Resources.About;
             menu.Items.Add(item);
 
-            // Exit.
+            // Exit
             item = new ToolStripMenuItem();
             item.Text = Properties.Resources.ContextMenuExitItemText;
             item.Image = Properties.Resources.exit;
             item.Click += new EventHandler(exit_Click);
-            //item.Image = Resources.Exit;
             menu.Items.Add(item);
 
             return menu;

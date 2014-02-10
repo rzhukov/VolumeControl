@@ -13,10 +13,10 @@ namespace VolumeHotKey
         public About()
         {
             InitializeComponent();
-            this.Text = String.Format("About {0}", AssemblyTitle);
+            this.Text = String.Format("{0} {1}", Properties.Resources.AboutFormAboutRow, AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelVersion.Text = String.Format("{0} {1}",Properties.Resources.AboutFormVersionRow, AssemblyVersion);
+            this.labelCopyright.Text = string.Format("{0}, {1}", AssemblyCopyright, Properties.Resources.AuthorName);
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = string.Format("{0}{1}{2}", VolumeHotKey.Properties.Resources.HotkeysDescription, Environment.NewLine, AssemblyDescription);
         }

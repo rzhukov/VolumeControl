@@ -61,11 +61,38 @@ namespace VolumeHotKey.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string AboutFormAboutRow {
+            get {
+                return ResourceManager.GetString("AboutFormAboutRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Version.
+        /// </summary>
+        internal static string AboutFormVersionRow {
+            get {
+                return ResourceManager.GetString("AboutFormVersionRow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Another copy of this program already running.
         /// </summary>
         internal static string AnotherCopyRunMessage {
             get {
                 return ResourceManager.GetString("AnotherCopyRunMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Roman Zhukov.
+        /// </summary>
+        internal static string AuthorName {
+            get {
+                return ResourceManager.GetString("AuthorName", resourceCulture);
             }
         }
         
